@@ -1,0 +1,93 @@
+@mixin formBoxes {
+  width: 440px;
+  height: 40px;
+  margin-top: 20px;
+  background: white;
+  border: 1pt solid lightgrey;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 36px;
+  border-radius: 2px;
+}
+
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container {
+  margin-top: 30px;
+  display:inline-block;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 25px;
+  height: 75px;
+  background-color: #428BCA;
+  color: white;
+  text-align: left;
+  margin-bottom: 0px;
+  padding-left: 30px;
+  padding-top: 23px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-bottom: 2px solid #2C7DC4;
+}
+
+.items {
+  width: 500px;
+  padding-top: 16px;
+  height: 570px;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  position: relative;
+}
+
+.formBox {
+  position: relative;
+}
+
+.inside {
+  width: 11px;
+  height: 11px;
+  padding-left: 15px;
+  padding-top: 30px;
+  color: grey;
+  position: absolute;
+}
+
+.inputBar{
+  @include formBoxes
+  }
+
+.selectBar{
+  @include formBoxes
+  color: #2E4459;
+}
+
+.comment{
+  @include formBoxes
+  height: 75px;
+}
+
+.footer {
+  background-color: #C9DEF0;
+  padding-left: 30px;
+  padding-top: 23px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; border-bottom: 2px solid lightgrey;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+  height: 75px;
+  text-align: left;
+
+  button {
+    background-color: #428BCA;
+    border: 1px solid #2C7DC4;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+  }
+}

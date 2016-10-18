@@ -36,13 +36,6 @@ function render(item) {
 
 };
 
-// var lang = item.options[0];
-// for (var i = 0; i < 16; i++) {
-//   var selectLang = item.options[i]);
-//   return selectLang
-// }
-
-
 function processItems(data) {
   data.forEach(function(item) {
     var formItems = render(item);

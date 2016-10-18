@@ -64,11 +64,13 @@ h1 {
 .selectBar{
   @include formBoxes
   color: #2E4459;
+  border-radius: 2px;
 }
 
 .comment{
   @include formBoxes
   height: 75px;
+  padding-top: 12px;
 }
 
 .footer {
